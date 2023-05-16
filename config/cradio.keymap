@@ -51,17 +51,17 @@
 		combo_esc {
 			timeout-ms = <300>;
 			key-positions = <12 13>;
-			bindings = <&kp ESC>
+			bindings = <&kp ESC>;
 		};
 		combo_backspace {
 			timeout-ms = <300>;
 			key-positions = <16 17>;
-			bindings = <&kp BACKSPACE>
+			bindings = <&kp BACKSPACE>;
 		};
 		combo_delete {
 			timeout-ms = <300>;
 			key-positions = <17 18>;
-			bindings = <&kp DELETE>
+			bindings = <&kp DELETE>;
 		};
     };
 
