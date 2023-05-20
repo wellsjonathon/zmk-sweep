@@ -30,7 +30,7 @@
     ignore-modifiers;
 };
 
-{
+/ {
     macros {
         // sometimes my device thinks a modifier is being held down
         // pressing all modifiers fixes it.
