@@ -39,7 +39,7 @@ jobs:
         run: west zephyr-export
 
       - name: West Build (Cradio/Sweep Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Cradio/Sweep Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
@@ -54,7 +54,7 @@ jobs:
           path: cradio_left_nice_nano_v2.uf2
 
       - name: West Build (Cradio/Sweep Right)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Cradio/Sweep Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
