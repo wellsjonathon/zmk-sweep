@@ -1,0 +1,5 @@
+include:
+  - board: nice_nano//zmk@2
+    shield: cradio_left
+  - board: nice_nano//zmk@2
+    shield: cradio_right
